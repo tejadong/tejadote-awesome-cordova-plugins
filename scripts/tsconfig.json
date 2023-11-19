@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "lib": ["es6"],
+    "paths": {
+      "@tejadong-awesome-cordova-plugins/core": ["../src/@tejadong-awesome-cordova-plugins/core"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
