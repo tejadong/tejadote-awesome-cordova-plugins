@@ -51,12 +51,12 @@ module.exports = (currentVersion) => {
         readFilesProcessor.basePath = path.resolve(__dirname, '../../..');
 
         readTypeScriptModules.basePath = path.resolve(path.resolve(__dirname, '../../..'));
-        readTypeScriptModules.sourceFiles = ['./src/@tejadote-awesome-cordova-plugins/plugins/**/*.ts'];
+        readTypeScriptModules.sourceFiles = ['./src/@tejadong-awesome-cordova-plugins/plugins/**/*.ts'];
       })
 
       // Configure file writing
       .config(function (writeFilesProcessor) {
-        writeFilesProcessor.outputFolder = './dist/@tejadote-awesome-cordova-plugins/';
+        writeFilesProcessor.outputFolder = './dist/@tejadong-awesome-cordova-plugins/';
       })
 
       .config(function (writeFilesProcessor) {

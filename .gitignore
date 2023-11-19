@@ -7,7 +7,7 @@ scripts/ionic-native-bower
 scripts/docs-json/*.json
 scripts/docs-json/typedoc-docs
 dist/
-src/@tejadote-awesome-cordova-plugins/plugins/**/ngx
+src/@tejadong-awesome-cordova-plugins/plugins/**/ngx
 *.d.ts
 injectable-classes.json
 

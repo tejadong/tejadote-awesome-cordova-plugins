@@ -36,7 +36,7 @@ export function getProgram(rootNames: string[] = createSourceFiles()) {
 
 // hacky way to export metadata only for core package
 export function transpileNgxCore() {
-  getProgram([resolve(ROOT, 'src/@tejadote-awesome-cordova-plugins/core/index.ts')]).emit({
+  getProgram([resolve(ROOT, 'src/@tejadong-awesome-cordova-plugins/core/index.ts')]).emit({
     emitFlags: EmitFlags.Metadata,
     emitCallback: ({ program, writeFile, customTransformers, cancellationToken, targetSourceFile }) => {
       return program.emit(targetSourceFile, writeFile, cancellationToken, true, customTransformers);
@@ -59,7 +59,7 @@ export function generateDeclarationFiles() {
 
 export function generateLegacyBundles() {
   [
-    resolve(ROOT, 'dist/@tejadote-awesome-cordova-plugins/core/index.js'),
+    resolve(ROOT, 'dist/@tejadong-awesome-cordova-plugins/core/index.js'),
     ...PLUGIN_PATHS.map((p) => p.replace(join(ROOT, 'src'), join(ROOT, 'dist')).replace('index.ts', 'ngx/index.js')),
   ].forEach((p) =>
     rollup({
@@ -68,7 +68,7 @@ export function generateLegacyBundles() {
         if (warning.code === 'UNUSED_EXTERNAL_IMPORT') return;
         warn(warning);
       },
-      external: ['@angular/core', '@tejadote-awesome-cordova-plugins/core', 'rxjs', 'tslib'],
+      external: ['@angular/core', '@tejadong-awesome-cordova-plugins/core', 'rxjs', 'tslib'],
     }).then((bundle) =>
       bundle.write({
         file: join(dirname(p), 'bundle.js'),

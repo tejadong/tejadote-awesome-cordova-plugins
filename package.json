@@ -1,5 +1,5 @@
 {
-  "name": "tejadote-awesome-cordova-plugins",
+  "name": "tejadong-awesome-cordova-plugins",
   "version": "6.4.0",
   "description": "Native plugin wrappers for Cordova and Ionic with TypeScript, ES6+, Promise and Observable support",
   "homepage": "https://awesome-cordova-plugins.com",
@@ -87,10 +87,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tejadote/awesome-cordova-plugins.git"
+    "url": "git+https://github.com/tejadong-awesome-cordova-plugins/awesome-cordova-plugins.git"
   },
   "bugs": {
-    "url": "https://github.com/tejadote/awesome-cordova-plugins/issues"
+    "url": "https://github.com/tejadong-awesome-cordova-plugins/awesome-cordova-plugins/issues"
   },
   "config": {
     "commitizen": {

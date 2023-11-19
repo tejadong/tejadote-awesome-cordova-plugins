@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Cordova, AwesomeCordovaNativePlugin, Plugin } from '@tejadote-awesome-cordova-plugins/core';
+import { Cordova, AwesomeCordovaNativePlugin, Plugin } from '@tejadong-awesome-cordova-plugins/core';
 
 /**
  * Object of options to pass into the playVideo method.
@@ -52,7 +52,7 @@ export interface StreamingAudioOptions {
  * This plugin allows you to stream audio and video in a fullscreen, native player on iOS and Android.
  * @usage
  * ```typescript
- * import { StreamingMedia, StreamingVideoOptions } from '@tejadote-awesome-cordova-plugins/streaming-media/ngx';
+ * import { StreamingMedia, StreamingVideoOptions } from '@tejadong-awesome-cordova-plugins/streaming-media/ngx';
  *
  * constructor(private streamingMedia: StreamingMedia) { }
  *

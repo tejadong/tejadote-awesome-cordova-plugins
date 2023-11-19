@@ -16,8 +16,8 @@
     "inlineSources": true,
     "sourceMap": true
   },
-  "include": ["src/@tejadote-awesome-cordova-plugins/core/**/*.ts"],
-  "exclude": ["node_modules", "src/@tejadote-awesome-cordova-plugins/core/**/*.spec.ts"],
+  "include": ["src/@tejadong-awesome-cordova-plugins/core/**/*.ts"],
+  "exclude": ["node_modules", "src/@tejadong-awesome-cordova-plugins/core/**/*.spec.ts"],
   "angularCompilerOptions": {
     "genDir": "aot",
     "compilationMode": "partial"

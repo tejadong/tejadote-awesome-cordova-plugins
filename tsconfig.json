@@ -9,7 +9,7 @@
     "module": "es2015",
     "moduleResolution": "node",
     "paths": {
-      "@tejadote-awesome-cordova-plugins/core": ["./dist/@tejadote-awesome-cordova-plugins/core"]
+      "@tejadong-awesome-cordova-plugins/core": ["./dist/@tejadong-awesome-cordova-plugins/core"]
     },
     "outDir": "./dist",
     "rootDir": "src",
@@ -19,7 +19,7 @@
     "inlineSources": true,
     "inlineSourceMap": true
   },
-  "include": ["src/@tejadote-awesome-cordova-plugins/plugins/**/*.ts"],
+  "include": ["src/@tejadong-awesome-cordova-plugins/plugins/**/*.ts"],
   "angularCompilerOptions": {
     "genDir": "aot",
     "compilationMode": "partial"

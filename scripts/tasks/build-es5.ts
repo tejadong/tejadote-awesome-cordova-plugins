@@ -27,13 +27,13 @@ const webpackConfig: Configuration = {
   target: 'web',
   output: {
     path: DIST,
-    filename: 'tejadote-awesome-cordova-plugins.min.js',
+    filename: 'tejadong-awesome-cordova-plugins.min.js',
   },
   resolve: {
     modules: ['node_modules'],
     extensions: ['.js'],
     alias: {
-      '@tejadote-awesome-cordova-plugins/core': resolve(DIST, '@tejadote-awesome-cordova-plugins/core/index.js'),
+      '@tejadong-awesome-cordova-plugins/core': resolve(DIST, '@tejadong-awesome-cordova-plugins/core/index.js'),
     },
   },
   module: {
@@ -69,8 +69,8 @@ function createIndexFile() {
   fileContent += `\nwindow.IonicNative = {\n`;
   fileContent += INJECTABLE_CLASSES.map((e) => e.className).join(',\n');
   fileContent += '\n};\n';
-  fileContent += `require('./@tejadote-awesome-cordova-plugins/core/bootstrap').checkReady();\n`;
-  fileContent += `require('./@tejadote-awesome-cordova-plugins/core/ng1').initAngular1(window.IonicNative);`;
+  fileContent += `require('./@tejadong-awesome-cordova-plugins/core/bootstrap').checkReady();\n`;
+  fileContent += `require('./@tejadong-awesome-cordova-plugins/core/ng1').initAngular1(window.IonicNative);`;
 
   writeFileSync(INDEX_PATH, fileContent, { encoding: 'utf-8' });
 }

@@ -71,7 +71,7 @@ function transformClasses(file: SourceFile, ctx: TransformationContext, ngcBuild
 export function pluginClassTransformer(ngcBuild?: boolean): TransformerFactory<SourceFile> {
   return (ctx: TransformationContext) => {
     return (tsSourceFile) => {
-      if (tsSourceFile.fileName.indexOf('src/@tejadote-awesome-cordova-plugins/plugins') > -1) {
+      if (tsSourceFile.fileName.indexOf('src/@tejadong-awesome-cordova-plugins/plugins') > -1) {
         return transformClasses(tsSourceFile, ctx, ngcBuild);
       }
       return tsSourceFile;
