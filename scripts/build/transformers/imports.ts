@@ -11,12 +11,12 @@ function transformImports(file: SourceFile, ctx: TransformationContext, ngcBuild
     );
   }
 
-  // find the @tejadong-awesome-cordova-plugins/core import statement
+  // find the @tejadote-awesome-cordova-plugins/core import statement
   const importStatement = (file.statements as any).find((s: any) => {
-    return s.kind === SyntaxKind.ImportDeclaration && s.moduleSpecifier.text === '@tejadong-awesome-cordova-plugins/core';
+    return s.kind === SyntaxKind.ImportDeclaration && s.moduleSpecifier.text === '@tejadote-awesome-cordova-plugins/core';
   });
 
-  // we're only interested in files containing @tejadong-awesome-cordova-plugins/core import statement
+  // we're only interested in files containing @tejadote-awesome-cordova-plugins/core import statement
   if (!importStatement) return file;
 
   const decorators: string[] = [];

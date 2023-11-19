@@ -10,7 +10,7 @@ module.exports = function readmes(renderDocsProcessor) {
       docs = docs.filter((doc) => (!!doc.name && !!doc.outputPath) || doc.docType === 'index-page');
 
       docs.forEach((doc) => {
-        doc.outputPath = doc.outputPath.replace('src/@tejadong-awesome-cordova-plugins/', '');
+        doc.outputPath = doc.outputPath.replace('src/@tejadote-awesome-cordova-plugins/', '');
       });
 
       return docs;

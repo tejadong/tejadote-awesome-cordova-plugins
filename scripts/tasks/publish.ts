@@ -22,11 +22,11 @@ const PACKAGE_JSON_BASE = {
   license: 'MIT',
   repository: {
     type: 'git',
-    url: 'https://github.com/danielsogl/tejadong-awesome-cordova-plugins.git',
+    url: 'https://github.com/danielsogl/tejadote-awesome-cordova-plugins.git',
   },
 };
 
-const DIST = resolve(ROOT, 'dist/@tejadong-tejadong-awesome-cordova-plugins');
+const DIST = resolve(ROOT, 'dist/@tejadote-tejadote-awesome-cordova-plugins');
 
 const PACKAGES = [];
 
@@ -34,13 +34,13 @@ const MIN_CORE_VERSION = '^6.0.1';
 const RXJS_VERSION = '^5.5.0 || ^6.5.0 || ^7.3.0';
 
 const PLUGIN_PEER_DEPENDENCIES = {
-  '@tejadong-tejadong-awesome-cordova-plugins/core': MIN_CORE_VERSION,
+  '@tejadote-tejadote-awesome-cordova-plugins/core': MIN_CORE_VERSION,
   rxjs: RXJS_VERSION,
 };
 
 function getPackageJsonContent(name: string, peerDependencies = {}, dependencies = {}) {
   return merge(PACKAGE_JSON_BASE, {
-    name: '@tejadong-tejadong-awesome-cordova-plugins/' + name,
+    name: '@tejadote-tejadote-awesome-cordova-plugins/' + name,
     dependencies,
     peerDependencies,
     version: VERSION,
@@ -57,7 +57,7 @@ function writeNGXPackageJson(data: any, dir: string) {
   writeJSONSync(filePath, data);
 }
 function prepare() {
-  // write @tejadong-awesome-cordova-plugins/core package.json
+  // write @tejadote-awesome-cordova-plugins/core package.json
   writePackageJson(
     getPackageJsonContent('core', { rxjs: RXJS_VERSION }, { '@types/cordova': 'latest' }),
     resolve(DIST, 'core')
